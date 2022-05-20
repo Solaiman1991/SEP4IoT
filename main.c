@@ -52,7 +52,7 @@ int main() {
 	// Set output ports for leds used in the example
 	DDRA |= _BV(DDA0) | _BV(DDA7);
 	// Initialise the trace-driver to be used together with the R2R-Network
-	trace_init();
+	//trace_init();
 
 	// vvvvvvvvvvvvvvvvv BELOW IS LoRaWAN initialisation vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 	// Initialise the HAL layer and use 5 for LED driver priority
