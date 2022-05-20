@@ -71,7 +71,6 @@ C_SRCS +=  \
 ../FreeRTOS/src/timers.c \
 ../FreeRTOS/src/variantHooks.c \
 ../src/ASF/mega/boards/stk600/rcx_x/init.c \
-../src/main.c \
 ../TerrariumFiles/loRaWanHandler.c \
 ../TerrariumFiles/temperature_Sensor.c \
 ../TerrariumFiles/terrarium.c \
@@ -97,7 +96,6 @@ FreeRTOS/src/tasks.o \
 FreeRTOS/src/timers.o \
 FreeRTOS/src/variantHooks.o \
 src/ASF/mega/boards/stk600/rcx_x/init.o \
-src/main.o \
 TerrariumFiles/loRaWanHandler.o \
 TerrariumFiles/temperature_Sensor.o \
 TerrariumFiles/terrarium.o \
@@ -116,7 +114,6 @@ FreeRTOS/src/tasks.o \
 FreeRTOS/src/timers.o \
 FreeRTOS/src/variantHooks.o \
 src/ASF/mega/boards/stk600/rcx_x/init.o \
-src/main.o \
 TerrariumFiles/loRaWanHandler.o \
 TerrariumFiles/temperature_Sensor.o \
 TerrariumFiles/terrarium.o \
@@ -135,7 +132,6 @@ FreeRTOS/src/tasks.d \
 FreeRTOS/src/timers.d \
 FreeRTOS/src/variantHooks.d \
 src/ASF/mega/boards/stk600/rcx_x/init.d \
-src/main.d \
 TerrariumFiles/loRaWanHandler.d \
 TerrariumFiles/temperature_Sensor.d \
 TerrariumFiles/terrarium.d \
@@ -154,7 +150,6 @@ FreeRTOS/src/tasks.d \
 FreeRTOS/src/timers.d \
 FreeRTOS/src/variantHooks.d \
 src/ASF/mega/boards/stk600/rcx_x/init.d \
-src/main.d \
 TerrariumFiles/loRaWanHandler.d \
 TerrariumFiles/temperature_Sensor.d \
 TerrariumFiles/terrarium.d \
@@ -252,13 +247,6 @@ FreeRTOS/src/variantHooks.o: ../FreeRTOS/src/variantHooks.c
 	
 
 src/ASF/mega/boards/stk600/rcx_x/init.o: ../src/ASF/mega/boards/stk600/rcx_x/init.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -DDEBUG -DF_CPU=16000000L -DBOARD=STK600_MEGA  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.7.374\include" -I"../drivers" -I"../FreeRTOS/src" -I"../src/ASF/common/boards" -I"../src/ASF/mega/utils/preprocessor" -I"../src/ASF/mega/utils" -I"../src/ASF/common/utils" -I"../src" -I"../src/config"  -O1 -fdata-sections -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g3 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.7.374\gcc\dev\atmega2560" -c -std=gnu99 -fno-strict-aliasing -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -mrelax -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
-	@echo Finished building: $<
-	
-
-src/main.o: ../src/main.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -DDEBUG -DF_CPU=16000000L -DBOARD=STK600_MEGA  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.7.374\include" -I"../drivers" -I"../FreeRTOS/src" -I"../src/ASF/common/boards" -I"../src/ASF/mega/utils/preprocessor" -I"../src/ASF/mega/utils" -I"../src/ASF/common/utils" -I"../src" -I"../src/config"  -O1 -fdata-sections -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g3 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\ATmega_DFP\1.7.374\gcc\dev\atmega2560" -c -std=gnu99 -fno-strict-aliasing -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -mrelax -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

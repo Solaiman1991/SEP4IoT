@@ -26,8 +26,6 @@ FreeRTOS\src\variantHooks.c
 
 src\ASF\mega\boards\stk600\rcx_x\init.c
 
-src\main.c
-
 TerrariumFiles\loRaWanHandler.c
 
 TerrariumFiles\temperature_Sensor.c

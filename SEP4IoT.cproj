@@ -411,9 +411,6 @@
     <None Include="src\config\conf_board.h">
       <SubType>compile</SubType>
     </None>
-    <Compile Include="src\main.c">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="TerrariumFiles\loRaWanHandler.c">
       <SubType>compile</SubType>
     </Compile>
